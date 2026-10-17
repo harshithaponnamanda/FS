@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f6fa; color: #222; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; background: #e67e22; padding: 12px 24px; color: white; flex-wrap: wrap; }
+.logo { margin: 0; }
+.nav-links a { color: white; text-decoration: none; margin-left: 18px; font-weight: bold; }
+.nav-links a.active { border-bottom: 2px solid white; }
+
+.btn { display: inline-block; background: #e67e22; color: white; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; text-decoration: none; font-size: 15px; }
+.btn:hover { background: #cf6d17; }
+
+.home { text-align: center; margin-top: 60px; }
+.home p { max-width: 500px; margin: 0 auto 24px; color: #555; }
+
+.filters { margin-bottom: 20px; }
+.filter { background: white; border: 1px solid #e67e22; color: #e67e22; padding: 6px 14px; border-radius: 20px; margin-right: 8px; cursor: pointer; }
+.filter.active { background: #e67e22; color: white; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.card { background: white; padding: 16px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
+.card h3 { margin: 0 0 6px; }
+.category { color: #888; font-size: 14px; margin: 4px 0; }
+.price { font-weight: bold; font-size: 18px; }
+
+.cart-item { display: flex; justify-content: space-between; align-items: center; background: white; padding: 12px 16px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+.cart-name { flex: 1; font-weight: bold; }
+.cart-item > span { min-width: 60px; text-align: right; }
+.qty { display: flex; align-items: center; gap: 10px; margin: 0 20px; }
+.qty button { width: 28px; height: 28px; border: none; background: #e67e22; color: white; border-radius: 50%; cursor: pointer; font-size: 16px; }
+
+.order-box { background: white; padding: 24px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.success { color: #27ae60; }
+
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: 10px; border-bottom: 1px solid #ddd; text-align: left; font-size: 14px; }
+th { background: #eee; }
+
+.status { padding: 3px 10px; border-radius: 12px; color: white; font-size: 13px; }
+.status.Preparing { background: #f39c12; }
+.status.Ready { background: #27ae60; }
+.status.Completed { background: #7f8c8d; }
